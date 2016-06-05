@@ -1,5 +1,7 @@
 # manage-this-node
 
+I forked this from [Manage-This-Node](https://github.com/onedr0p/manage-this-node)
+
 NodeJS version of [Muximux](https://github.com/mescon/Muximux/) and [Managethis](https://github.com/Tenzinn3/Managethis)
 
 Getting Started

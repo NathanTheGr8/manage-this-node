@@ -47,7 +47,7 @@ app.get('/', function(req, res, next) {
 app.get('/commits', function(req, res, next) {
 
   var scraper = new Xray();
-  scraper('https://github.com/onedr0p/manage-this-node/commits/master',
+  scraper('https://github.com/NathanTheGr8/manage-this-node/commits/master',
     '.table-list-cell',
     [{
       title: '.commit-title',
