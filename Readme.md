@@ -15,7 +15,7 @@ Getting Started
 
 ```bash
 # Clone the repository or download the ZIP and extract it
-git clone https://github.com/onedr0p/manage-this-node
+git clone https://github.com/nathanthegr8/manage-this-node
 ```
 
 ```bash
@@ -66,7 +66,7 @@ forever stop ./bin/www
 Goto `localhost:3000` to see the app.
 
 ### Docker
-A dockerfile for this has been provided by [chimpchimp](https://github.com/chimpchimp) [here](https://github.com/chimpchimp/docker-manage-this-node)
+A dockerfile for this has been provided by [nathanthegr8](https://github.com/nathanthegr8) [here](https://github.com/nathanthegr8/docker-manage-this-node)
 
 App Specific Workarounds
 ---------------
