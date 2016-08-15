@@ -1,7 +1,5 @@
 /* --------------------------------
-
 Primary style
-
 -------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -40,13 +38,11 @@ iframe {
 
 
 /* --------------------------------
-
 Main components
-
 -------------------------------- */
 
 .cd-tabs nav {
-  overflow: hidden;
+  /*overflow: hidden;*/
   -webkit-overflow-scrolling: touch;
   box-shadow: inset 0 -2px 3px rgba(203, 196, 130, 0.06);
   }
@@ -54,27 +50,27 @@ Main components
 
 @media only screen and (min-width: 0px) {
   .cd-tabs nav {
-    overflow: auto;
+   /* overflow: auto;
     margin: 0;
     position: relative;
     float: none;
     background: transparent;
-    box-shadow: none;
+    box-shadow: none;*/
   }
 }
 
 .cd-tabs-navigation {
-  width: 360px;
+  /*width: 360px;*/
 }
 
 .cd-tabs-navigation:after {
-  content: "";
+  /*content: "";
   display: table;
-  clear: both;
+  clear: both;*/
 }
 
 .cd-tabs-navigation li {
-  float: left;
+  /*float: left;*/
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -khtml-user-select: none;    /* Konqueror */
@@ -85,14 +81,14 @@ Main components
 }
 
 .cd-tabs-navigation li:last-child {
-  float: right;
-  right: 0px;
+ /* float: right;
+  right: 0px;*/
 }
 
 .cd-tabs-navigation a, #reload {
-  position: relative;
-  display: block;
-  height: 160px;
+  /*position: relative;
+  display: block;*/
+  /*height: 160px;
   width: 30px;
   text-align: center;
   font-size: 14px;
@@ -101,7 +97,7 @@ Main components
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
   color: #747b8b;
-  padding-top: 32px;
+  padding-top: 32px;*/
 }
 
 #reload, .cd-tabs-navigation li {
@@ -128,7 +124,6 @@ Main components
   .cd-tabs-navigation a, #reload {
     height: 40px;
     line-height: 45px;
-    width: 100%;
     text-align: center;
     font-size: 14px;
     font-size: 0.875rem;

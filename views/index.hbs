@@ -1,27 +1,36 @@
 <div class="cd-tabs">
-  <nav>
+  <!-- Navigation -->
+  <nav class="navbar-inverse" role="navigation" id="navbar-main">
     <ul class="cd-tabs-navigation">
-      {{#each enabledServices}}
-        <li>
-          {{#if default}}
-            <a data-content="{{_id}}" class="selected"><span class="{{icon}} fa-lg"></span> {{name}}</a>
-          {{else}}
-            <a data-content="{{_id}}"><span class="{{icon}} fa-lg"></span> {{name}}</a>
-          {{/if}}
-        </li>
-      {{/each}}
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Davis Family Server</a>
+      </div>
 
-      <li style="float: right;">
-        <a id="settings"><span class="fa fa-cog fa-lg"></span></a>
-      </li>
-      <li style="float: right;">
-        <a id="commits"><span class="fa fa-github fa-lg"></span></a>
-      </li>
-      <li>
-        <a id="reload"><span class="fa fa-refresh fa-lg"></span></a>
-      </li>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          {{#each enabledServices}}
+            <li>
+              {{#if default}}
+                <a data-content="{{_id}}" class="selected"><span class="{{icon}} fa-lg"></span> {{name}}</a>
+              {{else}}
+                <a data-content="{{_id}}"><span class="{{icon}} fa-lg"></span> {{name}}</a>
+              {{/if}}
+            </li>
+          {{/each}}
+          <li><a id="settings"><span class="fa fa-cog fa-lg"></span></a></li>
+          <li><a id="commits"><span class="fa fa-github fa-lg"></span></a></li>
+          <li><a id="reload"><span class="fa fa-refresh fa-lg"></span></a></li>
+        </ul>
+      </div>
     </ul>
   </nav>
+  <!--end nav bar-->
 
   <ul class="cd-tabs-content">
     {{#each services}}
