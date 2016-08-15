@@ -1,7 +1,5 @@
 # manage-this-node
 
-I forked this from [Manage-This-Node](https://github.com/onedr0p/manage-this-node)
-
 NodeJS version of [Muximux](https://github.com/mescon/Muximux/) and [Managethis](https://github.com/Tenzinn3/Managethis)
 
 Getting Started
@@ -15,7 +13,7 @@ Getting Started
 
 ```bash
 # Clone the repository or download the ZIP and extract it
-git clone https://github.com/nathanthegr8/manage-this-node
+git clone https://github.com/onedr0p/manage-this-node
 ```
 
 ```bash
@@ -39,6 +37,12 @@ In `config.json` fill in the `port` you want to use if you don't want to use por
 Everything else can be handled when the app is running via the settings menu.
 
 **Important note**: If you must change the `config.json` file by hand, restart the app to see the changes.
+
+Basic auth is available by passing `BASIC_AUTH_USER` and `BASIC_AUTH_PASSWORD` through environment variables.
+
+```bash
+BASIC_AUTH_USER=user BASIC_AUTH_PASSWORD=password npm start
+```
 
 ### Start the app
 
@@ -66,14 +70,14 @@ forever stop ./bin/www
 Goto `localhost:3000` to see the app.
 
 ### Docker
-A dockerfile for this has been provided by [nathanthegr8](https://github.com/nathanthegr8) [here](https://github.com/nathanthegr8/docker-manage-this-node)
+A dockerfile for this has been provided by [chimpchimp](https://github.com/chimpchimp) [here](https://github.com/chimpchimp/docker-manage-this-node)
 
 App Specific Workarounds
 ---------------
 **Emby**  
 By Default Emby sends a header that prevents loading in an iframe.   
 
-Windows: 
+Windows:
 * Edit `C:\Users\<username>\AppData\Roaming\MediaBrowser-Server\config\system.xml`  
 * Look for `<DenyIFrameEmbedding>true</DenyIFrameEmbedding>` replace `true` with `false`  
 * Should look like `<DenyIFrameEmbedding>false</DenyIFrameEmbedding>`  
