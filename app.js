@@ -5,10 +5,14 @@ var bodyParser   = require('body-parser');
 var _            = require('lodash');
 var fs           = require('fs-extra');
 var Xray         = require('x-ray');
+var basicAuth    = require('basic-auth-connect');
 
 var config = require(__dirname + '/lib/config');
 
 var app = express();
+if (process.env.BASIC_AUTH_USER && process.env.BASIC_AUTH_PASSWORD) {
+  app.use(basicAuth(process.env.BASIC_AUTH_USER, process.env.BASIC_AUTH_PASSWORD));
+}
 app.set('config', config);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs');
