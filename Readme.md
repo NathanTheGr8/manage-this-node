@@ -2,6 +2,8 @@
 
 NodeJS version of [Muximux](https://github.com/mescon/Muximux/) and [Managethis](https://github.com/Tenzinn3/Managethis)
 
+Forked from [oneDr0p](https://github.com/onedr0p/manage-this-node)
+
 Getting Started
 ---------------
 
@@ -80,8 +82,9 @@ Goto `localhost:3000` to see the app.
   --name="manage-this-node" \
   -v <path to config folder>:/config \
   --restart="always" \
-  nathanthegr8/docker-manage-this-node
+  nathanthegr8/manage-this-node
   ```
+
 ## Port Conflicts
 If you run into a port conflict trying to run on 3000, for example if you're running [Plex Requests](https://github.com/lokenx/plexrequests-meteor), it is simple to modify the port forwarding:
 
