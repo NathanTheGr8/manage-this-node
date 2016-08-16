@@ -20,7 +20,7 @@
     "serve-favicon": "~2.3.0",
     "x-ray": "^2.0.3"
   },
-  "repository": "git://github.com/NathanTheGr8/manage-this-node",
+  "repository": "git://github.com/onedr0p/manage-this-node",
   "keywords": [
     "couchpotato",
     "sonarr",
@@ -35,7 +35,7 @@
   "engines": {
     "node": ">=0.10"
   },
-  "author": "Nathan Davis <nathanthegreat94@gmail.com>",
+  "author": "Devin Buhl <devin.kray@gmail.com>",
   "license": "GPL",
   "devDependencies": {
     "jshint": "^2.9.1-rc1"
