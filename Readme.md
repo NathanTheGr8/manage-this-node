@@ -75,15 +75,21 @@ Goto `localhost:3000` to see the app.
 1. Install [Docker](https://www.docker.com/)
 
 2. Make a directory to store the config file and copy the template from the orginal repo, naming it config.json.
+```bash
+mkdir manage-this-node
+cd manage-this-node
+vim config.json
+```
+Copy in the template file from the repo.
 
 3. Run the container, pointing to the directory with the config file. This should now pull the image from Docker hub:
-  ```
-  docker run -d -p 3000:3000 \
-  --name="manage-this-node" \
-  -v <path to config folder>:/config \
-  --restart="always" \
-  nathanthegr8/manage-this-node
-  ```
+```bash
+docker run -d -p 3000:3000 \
+--name="manage-this-node" \
+-v <path to config folder>:/config \
+--restart="always" \
+nathanthegr8/manage-this-node
+```
 
 ## Port Conflicts
 If you run into a port conflict trying to run on 3000, for example if you're running [Plex Requests](https://github.com/lokenx/plexrequests-meteor), it is simple to modify the port forwarding:
