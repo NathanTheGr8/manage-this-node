@@ -2,11 +2,16 @@
 <browserconfig>
   <msapplication>
     <tile>
+<<<<<<< HEAD
       <square70x70logo src="img/icons/mstile-70x70.png"/>
       <square150x150logo src="img/icons/mstile-150x150.png"/>
       <square310x310logo src="img/icons/mstile-310x310.png"/>
       <wide310x150logo src="img/icons/mstile-310x150.png"/>
       <TileColor>#da532c</TileColor>
+=======
+      <square150x150logo src="img/icons/mstile-150x150.png?v=2bwQ2MnrLw"/>
+      <TileColor>#00a300</TileColor>
+>>>>>>> onedr0p/master
     </tile>
   </msapplication>
 </browserconfig>
