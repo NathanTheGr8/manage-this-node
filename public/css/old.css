@@ -1,0 +1,216 @@
+/* --------------------------------
+Primary style
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+
+body {
+  font-size: 0px;
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+  height: 926px;
+  background-color: #fff;
+}
+
+.input-sm {
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* --------------------------------
+Main components
+-------------------------------- */
+
+
+/* Tab Nav */
+.cd-tabs nav {
+  -webkit-overflow-scrolling: touch;
+  box-shadow: inset 0 -2px 3px rgba(203, 196, 130, 0.06);
+}
+
+.cd-tabs-navigation li {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+  background-color: #343843; /* Main nav colour */
+}
+
+/*Only show box shadows on mobile view*/
+@media only screen and (max-width: 991px) {
+  .cd-tabs-navigation li {
+    box-shadow: inset 0 -2px 3px rgba(203, 196, 130, 0.06);
+  }
+}
+
+
+.cd-tabs-navigation a, #reload {
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+}
+
+#reload, .cd-tabs-navigation li {
+  cursor: pointer;
+}
+
+.no-touch .cd-tabs-navigation a:hover, #reload:hover {
+  color: #f1f3f2; /* Hover text colour */
+  background-color: rgba(233, 230, 202, 0.3);
+}
+
+.cd-tabs-navigation a.selected:not(#reload) {
+  background-color: #41434f !important; /* Selected tab colour */
+  color: #f1f3f2; /* Selected text colour */
+  box-shadow: inset 0 5px 0 #31ac63; /* Selected tab marker colour */
+}
+
+.cd-tabs-navigation {
+  /* tabbed on top of devices */
+  width: 100%;
+  background-color: #343843; /* Main nav colour */
+  box-shadow: inset 0 -2px 3px rgba(203, 196, 130, 0.06);
+}
+/* End Tab Nav */
+
+
+
+
+/* Tab Content */
+.cd-tabs-content {
+  background: #36363b; /* Content background colour */
+}
+
+.cd-tabs-content li {
+  display: none;
+  padding: 0;
+}
+
+.cd-tabs-content li.selected {
+  display: block;
+  -webkit-animation: cd-fade-in 0.5s;
+  -moz-animation: cd-fade-in 0.5s;
+  animation: cd-fade-in 0.5s;
+}
+
+.cd-tabs-content li p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #8493bf;
+  margin-bottom: 2em;
+}
+
+.modal {
+  font-size: 14px;
+  color: #8493bf;
+}
+
+.modal-header {
+    font-weight: bold;
+    padding:9px 15px;
+    border-bottom:1px solid #8493bf;
+    background-color: #343843;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+
+.modal-content {
+  background-color: #41434f;
+}
+
+.modal-footer {
+  padding:9px 15px;
+  border-top:1px solid #8493bf;
+  background-color: #343843;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.modal .close {
+  padding: 0 10px;
+  color: #ffffff;
+  background-color: rgba(233, 230, 202, 0.7);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8493bf;
+  font-weight: bold;
+}
+
+
+@media only screen and (min-width: 0px) {
+  .cd-tabs-content {
+    min-height: 0;
+  }
+  .cd-tabs-content li {
+    padding: 0;
+  }
+  .cd-tabs-content li p {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+    body {
+    margin: 0px;
+    padding: 0px;
+}

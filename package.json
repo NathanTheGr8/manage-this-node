@@ -38,6 +38,10 @@
   "author": "Devin Buhl <devin.kray@gmail.com>",
   "license": "GPL",
   "devDependencies": {
-    "jshint": "^2.9.1-rc1"
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.1-rc1",
+    "sass-colorscheme": "^0.4.0"
   }
 }
